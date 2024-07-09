@@ -1,12 +1,16 @@
 import pandas as pd
 
 if __name__ == '__main__':
+    df3 = pd.read_csv('../../data/BJ1.csv')
+    df3 = df3.iloc[:, 29:33]
+
     df1 = pd.read_csv('../../data/house_belonging.csv')
     df0 = df1.groupby('belonging').count()
     df0 = df0.iloc[:, :1]
     df0.rename(columns={'Unnamed: 0': 'house_cnt'}, inplace=True)
 
     df1 = pd.read_csv('../../data/house_belonging.csv')
+    df1 = df1.join(df3)
     df1 = df1.groupby('belonging').mean()
     df1 = df1.iloc[:, 1:]
     df1.info()
