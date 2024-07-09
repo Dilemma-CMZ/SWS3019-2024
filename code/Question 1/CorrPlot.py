@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    correlation_matrix = pd.read_csv('Corr.csv')
+    correlation_matrix = pd.read_csv('../../data/Corr_mall.csv')
     correlation_matrix.set_index(correlation_matrix.columns[0], inplace=True)
     correlation_matrix = correlation_matrix.reset_index(drop=True)
     column_names = correlation_matrix.columns.tolist()
