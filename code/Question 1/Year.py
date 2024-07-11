@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 if __name__ == '__main__':
     df0 = pd.read_csv('../../data/district.csv')
     df0 = df0[df0['year'] >= 2010]
-    df0 = df0[df0['mall_cnt'] >= 10]
+    df0 = df0[df0['mall_cnt'] >= 13]
+    df0 = df0[df0['mall_cnt'] <= 16]
     df0 = df0['belonging']
 
     df = pd.read_csv('../../data/house_belonging.csv')
