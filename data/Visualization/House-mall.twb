@@ -27,16 +27,16 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Beijing_geo' name='textscan.0d5qusy0tzj79t19vicb901i7815'>
-            <connection class='textscan' directory='/Users/r/Documents/SWS3019-2024/data' filename='Beijing_geo.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='Beijing_geo.csv' password='' server='' />
           </named-connection>
           <named-connection caption='house_belonging' name='textscan.138tzp702fg7zn1f8tcr304195nl'>
-            <connection class='textscan' directory='/Users/r/Documents/SWS3019-2024/data' filename='house_belonging.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='house_belonging.csv' password='' server='' />
           </named-connection>
           <named-connection caption='mall_belonging' name='textscan.1m4f3lw1ggxjoi17n44h40l20q12'>
-            <connection class='textscan' directory='/Users/r/Documents/SWS3019-2024/data' filename='mall_belonging.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='mall_belonging.csv' password='' server='' />
           </named-connection>
           <named-connection caption='district' name='textscan.1qg7pmp0kug9lc15iavnp0zsples'>
-            <connection class='textscan' directory='/Users/r/Documents/SWS3019-2024/data' filename='district.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='district.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='Beijing_geo.csv1' table='[Beijing_geo#csv]' type='table'>

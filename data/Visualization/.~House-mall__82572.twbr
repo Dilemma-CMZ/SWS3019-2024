@@ -1,0 +1,2101 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='district' inline='true' name='federated.0q8jyrw0q95jq41h166ny0j9jnmg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Beijing_geo' name='textscan.0d5qusy0tzj79t19vicb901i7815'>
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='Beijing_geo.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='house_belonging' name='textscan.138tzp702fg7zn1f8tcr304195nl'>
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='house_belonging.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='mall_belonging' name='textscan.1m4f3lw1ggxjoi17n44h40l20q12'>
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='mall_belonging.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='district' name='textscan.1qg7pmp0kug9lc15iavnp0zsples'>
+            <connection class='textscan' directory='/Users/serendipity/Desktop/教材/NUS暑研/SWS3019-2024/data' filename='district.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='Beijing_geo.csv1' table='[Beijing_geo#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='ID' ordinal='1' />
+            <column datatype='real' name='面积' ordinal='2' />
+            <column datatype='real' name='周长' ordinal='3' />
+            <column datatype='spatial' name='名称' ordinal='4' />
+            <column datatype='real' name='Popu' ordinal='5' />
+            <column datatype='real' name='area' ordinal='6' />
+            <column datatype='real' name='PoDensity' ordinal='7' />
+            <column datatype='integer' name='new_id' ordinal='8' />
+            <column datatype='spatial' name='geometry' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='district.csv' table='[district#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='integer' name='belonging' ordinal='0' />
+              <column datatype='real' name='Lng' ordinal='1' />
+              <column datatype='real' name='Lat' ordinal='2' />
+              <column datatype='real' name='Cid' ordinal='3' />
+              <column datatype='real' name='followers' ordinal='4' />
+              <column datatype='real' name='totalPrice' ordinal='5' />
+              <column datatype='real' name='price' ordinal='6' />
+              <column datatype='real' name='square' ordinal='7' />
+              <column datatype='real' name='livingRoom' ordinal='8' />
+              <column datatype='real' name='drawingRoom' ordinal='9' />
+              <column datatype='real' name='kitchen' ordinal='10' />
+              <column datatype='real' name='bathRoom' ordinal='11' />
+              <column datatype='real' name='buildingType' ordinal='12' />
+              <column datatype='real' name='constructionTime' ordinal='13' />
+              <column datatype='real' name='renovationCondition' ordinal='14' />
+              <column datatype='real' name='buildingStructure' ordinal='15' />
+              <column datatype='real' name='ladderRatio' ordinal='16' />
+              <column datatype='real' name='elevator' ordinal='17' />
+              <column datatype='real' name='fiveYearsProperty' ordinal='18' />
+              <column datatype='real' name='subway' ordinal='19' />
+              <column datatype='real' name='district' ordinal='20' />
+              <column datatype='real' name='communityAverage' ordinal='21' />
+              <column datatype='real' name='year' ordinal='22' />
+              <column datatype='real' name='month' ordinal='23' />
+              <column datatype='real' name='day' ordinal='24' />
+              <column datatype='real' name='floor_num' ordinal='25' />
+              <column datatype='real' name='relativeHeight' ordinal='26' />
+              <column datatype='real' name='buildingType_towel' ordinal='27' />
+              <column datatype='real' name='buildingType_bungalow' ordinal='28' />
+              <column datatype='real' name='buildingType_comb' ordinal='29' />
+              <column datatype='real' name='buildingType_plate' ordinal='30' />
+              <column datatype='real' name='house_cnt' ordinal='31' />
+              <column datatype='real' name='mall_cnt' ordinal='32' />
+            </columns>
+          </relation>
+          <relation connection='textscan.138tzp702fg7zn1f8tcr304195nl' name='house_belonging.csv' table='[house_belonging#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='id' ordinal='1' />
+              <column datatype='real' name='Lng' ordinal='2' />
+              <column datatype='real' name='Lat' ordinal='3' />
+              <column datatype='integer' name='Cid' ordinal='4' />
+              <column datatype='integer' name='followers' ordinal='5' />
+              <column datatype='real' name='totalPrice' ordinal='6' />
+              <column datatype='integer' name='price' ordinal='7' />
+              <column datatype='real' name='square' ordinal='8' />
+              <column datatype='real' name='livingRoom' ordinal='9' />
+              <column datatype='integer' name='drawingRoom' ordinal='10' />
+              <column datatype='integer' name='kitchen' ordinal='11' />
+              <column datatype='integer' name='bathRoom' ordinal='12' />
+              <column datatype='real' name='buildingType' ordinal='13' />
+              <column datatype='real' name='constructionTime' ordinal='14' />
+              <column datatype='integer' name='renovationCondition' ordinal='15' />
+              <column datatype='integer' name='buildingStructure' ordinal='16' />
+              <column datatype='real' name='ladderRatio' ordinal='17' />
+              <column datatype='real' name='elevator' ordinal='18' />
+              <column datatype='real' name='fiveYearsProperty' ordinal='19' />
+              <column datatype='real' name='subway' ordinal='20' />
+              <column datatype='integer' name='district' ordinal='21' />
+              <column datatype='real' name='communityAverage' ordinal='22' />
+              <column datatype='integer' name='year' ordinal='23' />
+              <column datatype='integer' name='month' ordinal='24' />
+              <column datatype='integer' name='day' ordinal='25' />
+              <column datatype='integer' name='floor_num' ordinal='26' />
+              <column datatype='integer' name='relativeHeight' ordinal='27' />
+              <column datatype='integer' name='belonging' ordinal='28' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='Beijing_geo.csv' table='[Beijing_geo#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='ID' ordinal='1' />
+              <column datatype='real' name='面积' ordinal='2' />
+              <column datatype='real' name='周长' ordinal='3' />
+              <column datatype='spatial' name='名称' ordinal='4' />
+              <column datatype='real' name='Popu' ordinal='5' />
+              <column datatype='real' name='area' ordinal='6' />
+              <column datatype='real' name='PoDensity' ordinal='7' />
+              <column datatype='integer' name='new_id' ordinal='8' />
+              <column datatype='spatial' name='geometry' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='textscan.138tzp702fg7zn1f8tcr304195nl' name='mall_belonging.csv' table='[mall_belonging#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='real' name='longitude' ordinal='2' />
+              <column datatype='real' name='latitude' ordinal='3' />
+              <column datatype='integer' name='belonging' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='Beijing_geo.csv1' table='[Beijing_geo#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='ID' ordinal='1' />
+              <column datatype='real' name='面积' ordinal='2' />
+              <column datatype='real' name='周长' ordinal='3' />
+              <column datatype='spatial' name='名称' ordinal='4' />
+              <column datatype='real' name='Popu' ordinal='5' />
+              <column datatype='real' name='area' ordinal='6' />
+              <column datatype='real' name='PoDensity' ordinal='7' />
+              <column datatype='integer' name='new_id' ordinal='8' />
+              <column datatype='spatial' name='geometry' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Cid (house_belonging.csv)]' value='[house_belonging.csv].[Cid]' />
+          <map key='[Cid]' value='[district.csv].[Cid]' />
+          <map key='[F1 (Beijing_geo.csv)]' value='[Beijing_geo.csv].[F1]' />
+          <map key='[F1 (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[F1]' />
+          <map key='[F1 (mall_belonging.csv)]' value='[mall_belonging.csv].[F1]' />
+          <map key='[F1]' value='[house_belonging.csv].[F1]' />
+          <map key='[ID (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[ID]' />
+          <map key='[ID]' value='[Beijing_geo.csv].[ID]' />
+          <map key='[Lat (house_belonging.csv)]' value='[house_belonging.csv].[Lat]' />
+          <map key='[Lat]' value='[district.csv].[Lat]' />
+          <map key='[Lng (house_belonging.csv)]' value='[house_belonging.csv].[Lng]' />
+          <map key='[Lng]' value='[district.csv].[Lng]' />
+          <map key='[PoDensity (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[PoDensity]' />
+          <map key='[PoDensity]' value='[Beijing_geo.csv].[PoDensity]' />
+          <map key='[Popu (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[Popu]' />
+          <map key='[Popu]' value='[Beijing_geo.csv].[Popu]' />
+          <map key='[area (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[area]' />
+          <map key='[area]' value='[Beijing_geo.csv].[area]' />
+          <map key='[bathRoom (house_belonging.csv)]' value='[house_belonging.csv].[bathRoom]' />
+          <map key='[bathRoom]' value='[district.csv].[bathRoom]' />
+          <map key='[belonging (house_belonging.csv)]' value='[house_belonging.csv].[belonging]' />
+          <map key='[belonging (mall_belonging.csv)]' value='[mall_belonging.csv].[belonging]' />
+          <map key='[belonging]' value='[district.csv].[belonging]' />
+          <map key='[buildingStructure (house_belonging.csv)]' value='[house_belonging.csv].[buildingStructure]' />
+          <map key='[buildingStructure]' value='[district.csv].[buildingStructure]' />
+          <map key='[buildingType (house_belonging.csv)]' value='[house_belonging.csv].[buildingType]' />
+          <map key='[buildingType]' value='[district.csv].[buildingType]' />
+          <map key='[buildingType_bungalow]' value='[district.csv].[buildingType_bungalow]' />
+          <map key='[buildingType_comb]' value='[district.csv].[buildingType_comb]' />
+          <map key='[buildingType_plate]' value='[district.csv].[buildingType_plate]' />
+          <map key='[buildingType_towel]' value='[district.csv].[buildingType_towel]' />
+          <map key='[communityAverage (house_belonging.csv)]' value='[house_belonging.csv].[communityAverage]' />
+          <map key='[communityAverage]' value='[district.csv].[communityAverage]' />
+          <map key='[constructionTime (house_belonging.csv)]' value='[house_belonging.csv].[constructionTime]' />
+          <map key='[constructionTime]' value='[district.csv].[constructionTime]' />
+          <map key='[day (house_belonging.csv)]' value='[house_belonging.csv].[day]' />
+          <map key='[day]' value='[district.csv].[day]' />
+          <map key='[district (house_belonging.csv)]' value='[house_belonging.csv].[district]' />
+          <map key='[district]' value='[district.csv].[district]' />
+          <map key='[drawingRoom (house_belonging.csv)]' value='[house_belonging.csv].[drawingRoom]' />
+          <map key='[drawingRoom]' value='[district.csv].[drawingRoom]' />
+          <map key='[elevator (house_belonging.csv)]' value='[house_belonging.csv].[elevator]' />
+          <map key='[elevator]' value='[district.csv].[elevator]' />
+          <map key='[fiveYearsProperty (house_belonging.csv)]' value='[house_belonging.csv].[fiveYearsProperty]' />
+          <map key='[fiveYearsProperty]' value='[district.csv].[fiveYearsProperty]' />
+          <map key='[floor_num (house_belonging.csv)]' value='[house_belonging.csv].[floor_num]' />
+          <map key='[floor_num]' value='[district.csv].[floor_num]' />
+          <map key='[followers (house_belonging.csv)]' value='[house_belonging.csv].[followers]' />
+          <map key='[followers]' value='[district.csv].[followers]' />
+          <map key='[geometry (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[geometry]' />
+          <map key='[geometry]' value='[Beijing_geo.csv].[geometry]' />
+          <map key='[house_cnt]' value='[district.csv].[house_cnt]' />
+          <map key='[id]' value='[house_belonging.csv].[id]' />
+          <map key='[kitchen (house_belonging.csv)]' value='[house_belonging.csv].[kitchen]' />
+          <map key='[kitchen]' value='[district.csv].[kitchen]' />
+          <map key='[ladderRatio (house_belonging.csv)]' value='[house_belonging.csv].[ladderRatio]' />
+          <map key='[ladderRatio]' value='[district.csv].[ladderRatio]' />
+          <map key='[latitude]' value='[mall_belonging.csv].[latitude]' />
+          <map key='[livingRoom (house_belonging.csv)]' value='[house_belonging.csv].[livingRoom]' />
+          <map key='[livingRoom]' value='[district.csv].[livingRoom]' />
+          <map key='[longitude]' value='[mall_belonging.csv].[longitude]' />
+          <map key='[mall_cnt]' value='[district.csv].[mall_cnt]' />
+          <map key='[month (house_belonging.csv)]' value='[house_belonging.csv].[month]' />
+          <map key='[month]' value='[district.csv].[month]' />
+          <map key='[name]' value='[mall_belonging.csv].[name]' />
+          <map key='[new_id (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[new_id]' />
+          <map key='[new_id]' value='[Beijing_geo.csv].[new_id]' />
+          <map key='[price (house_belonging.csv)]' value='[house_belonging.csv].[price]' />
+          <map key='[price]' value='[district.csv].[price]' />
+          <map key='[relativeHeight (house_belonging.csv)]' value='[house_belonging.csv].[relativeHeight]' />
+          <map key='[relativeHeight]' value='[district.csv].[relativeHeight]' />
+          <map key='[renovationCondition (house_belonging.csv)]' value='[house_belonging.csv].[renovationCondition]' />
+          <map key='[renovationCondition]' value='[district.csv].[renovationCondition]' />
+          <map key='[square (house_belonging.csv)]' value='[house_belonging.csv].[square]' />
+          <map key='[square]' value='[district.csv].[square]' />
+          <map key='[subway (house_belonging.csv)]' value='[house_belonging.csv].[subway]' />
+          <map key='[subway]' value='[district.csv].[subway]' />
+          <map key='[totalPrice (house_belonging.csv)]' value='[house_belonging.csv].[totalPrice]' />
+          <map key='[totalPrice]' value='[district.csv].[totalPrice]' />
+          <map key='[year (house_belonging.csv)]' value='[house_belonging.csv].[year]' />
+          <map key='[year]' value='[district.csv].[year]' />
+          <map key='[名称 (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[名称]' />
+          <map key='[名称]' value='[Beijing_geo.csv].[名称]' />
+          <map key='[周长 (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[周长]' />
+          <map key='[周长]' value='[Beijing_geo.csv].[周长]' />
+          <map key='[面积 (Beijing_geo.csv1)]' value='[Beijing_geo.csv1].[面积]' />
+          <map key='[面积]' value='[Beijing_geo.csv].[面积]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mall_belonging.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>belonging</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[belonging]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>belonging</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lng]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>Lng</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cid]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>Cid</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>followers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[followers]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>followers</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[totalPrice]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>totalPrice</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>square</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[square]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>square</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>livingRoom</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[livingRoom]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>livingRoom</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drawingRoom</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drawingRoom]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>drawingRoom</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kitchen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kitchen]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>kitchen</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathRoom</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bathRoom]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>bathRoom</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingType</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingType]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>buildingType</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>constructionTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[constructionTime]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>constructionTime</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>renovationCondition</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[renovationCondition]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>renovationCondition</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingStructure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingStructure]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>buildingStructure</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ladderRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ladderRatio]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>ladderRatio</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elevator</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[elevator]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>elevator</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiveYearsProperty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fiveYearsProperty]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>fiveYearsProperty</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subway</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[subway]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>subway</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>communityAverage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[communityAverage]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>communityAverage</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floor_num</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floor_num]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>floor_num</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>relativeHeight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[relativeHeight]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>relativeHeight</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingType_towel</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingType_towel]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>buildingType_towel</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingType_bungalow</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingType_bungalow]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>buildingType_bungalow</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingType_comb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingType_comb]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>buildingType_comb</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingType_plate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingType_plate]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>buildingType_plate</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>house_cnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[house_cnt]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>house_cnt</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mall_cnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mall_cnt]</local-name>
+            <parent-name>[district.csv]</parent-name>
+            <remote-alias>mall_cnt</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lng (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>Lng</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cid (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>Cid</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>followers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[followers (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>followers</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[totalPrice (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>totalPrice</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>square</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[square (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>square</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>livingRoom</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[livingRoom (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>livingRoom</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drawingRoom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[drawingRoom (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>drawingRoom</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kitchen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[kitchen (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>kitchen</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathRoom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bathRoom (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>bathRoom</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingType</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[buildingType (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>buildingType</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>constructionTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[constructionTime (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>constructionTime</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>renovationCondition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[renovationCondition (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>renovationCondition</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buildingStructure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[buildingStructure (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>buildingStructure</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ladderRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ladderRatio (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>ladderRatio</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elevator</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[elevator (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>elevator</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiveYearsProperty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fiveYearsProperty (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>fiveYearsProperty</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subway</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[subway (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>subway</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[district (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>communityAverage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[communityAverage (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>communityAverage</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floor_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[floor_num (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>floor_num</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>relativeHeight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[relativeHeight (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>relativeHeight</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>belonging</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[belonging (house_belonging.csv)]</local-name>
+            <parent-name>[house_belonging.csv]</parent-name>
+            <remote-alias>belonging</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (Beijing_geo.csv)]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>面积</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[面积]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>面积</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>周长</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[周长]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>周长</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>名称</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[名称]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>名称</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Popu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Popu]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>Popu</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>area</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoDensity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PoDensity]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>PoDensity</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[new_id]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>new_id</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geometry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geometry]</local-name>
+            <parent-name>[Beijing_geo.csv]</parent-name>
+            <remote-alias>geometry</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (mall_belonging.csv)]</local-name>
+            <parent-name>[mall_belonging.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[mall_belonging.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[mall_belonging.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[mall_belonging.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>belonging</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[belonging (mall_belonging.csv)]</local-name>
+            <parent-name>[mall_belonging.csv]</parent-name>
+            <remote-alias>belonging</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>面积</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[面积 (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>面积</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>周长</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[周长 (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>周长</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>名称</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[名称 (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>名称</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Popu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Popu (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>Popu</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[area (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>area</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoDensity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PoDensity (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>PoDensity</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[new_id (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>new_id</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geometry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geometry (Beijing_geo.csv1)]</local-name>
+            <parent-name>[Beijing_geo.csv1]</parent-name>
+            <remote-alias>geometry</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='House Cnt / Mall Cnt' datatype='real' name='[Calculation_3666844928462090250]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[house_cnt]/[mall_cnt]' />
+      </column>
+      <column caption='Cid (house belonging.csv)' datatype='integer' name='[Cid (house_belonging.csv)]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Cid]' role='dimension' type='ordinal' />
+      <column caption='F1 (Beijing geo.csv)' datatype='integer' name='[F1 (Beijing_geo.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (Beijing geo.csv1)' datatype='integer' name='[F1 (Beijing_geo.csv1)]' role='measure' type='quantitative' />
+      <column caption='F1 (mall belonging.csv)' datatype='integer' name='[F1 (mall_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='ID (Beijing geo.csv1)' datatype='integer' name='[ID (Beijing_geo.csv1)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Lat (house belonging.csv)' datatype='real' name='[Lat (house_belonging.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Lat1' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Lng (house belonging.csv)' datatype='real' name='[Lng (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Lng1 (复制)' datatype='real' name='[Lng1 (复制)_3255117406081859587]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <calculation class='tableau' formula='[Lng]' />
+      </column>
+      <column aggregation='Avg' caption='Lng1' datatype='real' name='[Lng]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='PoDensity (Beijing geo.csv1)' datatype='real' name='[PoDensity (Beijing_geo.csv1)]' role='measure' type='quantitative' />
+      <column caption='Po Density' datatype='real' name='[PoDensity]' role='measure' type='quantitative' />
+      <column caption='Popu (Beijing geo.csv1)' datatype='real' name='[Popu (Beijing_geo.csv1)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Beijing_geo.csv1' datatype='table' name='[__tableau_internal_object_id__].[Beijing_geo.csv_6833FE3976C543C58606AD77A112487E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Beijing_geo.csv' datatype='table' name='[__tableau_internal_object_id__].[Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='district.csv' datatype='table' name='[__tableau_internal_object_id__].[district.csv_F8E3E49319A34A45BA4811B5F5FE6578]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='house_belonging.csv' datatype='table' name='[__tableau_internal_object_id__].[house_belonging.csv_07474D7B180248BFA721F387978E7B6A]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mall_belonging.csv' datatype='table' name='[__tableau_internal_object_id__].[mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111]' role='measure' type='quantitative' />
+      <column caption='area (Beijing geo.csv1)' datatype='real' name='[area (Beijing_geo.csv1)]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='real' name='[area]' role='measure' type='quantitative' />
+      <column caption='bathRoom (house belonging.csv)' datatype='integer' name='[bathRoom (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Bath Room' datatype='real' name='[bathRoom]' role='measure' type='quantitative' />
+      <column caption='Belonging (House Belonging.Csv)' datatype='integer' name='[belonging (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Belonging (Mall Belonging.Csv)' datatype='integer' name='[belonging (mall_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Belonging' datatype='integer' name='[belonging]' role='measure' type='quantitative' />
+      <column caption='buildingStructure (house belonging.csv)' datatype='integer' name='[buildingStructure (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Building Structure' datatype='real' name='[buildingStructure]' role='measure' type='quantitative' />
+      <column caption='buildingType (house belonging.csv)' datatype='real' name='[buildingType (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Building Type' datatype='real' name='[buildingType]' role='measure' type='quantitative' />
+      <column caption='communityAverage (house belonging.csv)' datatype='real' name='[communityAverage (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Community Average' datatype='real' name='[communityAverage]' role='measure' type='quantitative' />
+      <column caption='constructionTime (house belonging.csv)' datatype='real' name='[constructionTime (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Construction Time' datatype='real' name='[constructionTime]' role='measure' type='quantitative' />
+      <column caption='Day (House Belonging.Csv)' datatype='integer' name='[day (house_belonging.csv)]' role='dimension' type='quantitative' />
+      <column caption='Day' datatype='real' name='[day]' role='dimension' type='quantitative' />
+      <column caption='District (House Belonging.Csv)' datatype='integer' name='[district (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='District' datatype='real' name='[district]' role='measure' type='quantitative' />
+      <column caption='drawingRoom (house belonging.csv)' datatype='integer' name='[drawingRoom (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Drawing Room' datatype='real' name='[drawingRoom]' role='measure' type='quantitative' />
+      <column caption='Elevator (House Belonging.Csv)' datatype='real' name='[elevator (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Elevator' datatype='real' name='[elevator]' role='measure' type='quantitative' />
+      <column caption='fiveYearsProperty (house belonging.csv)' datatype='real' name='[fiveYearsProperty (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Five Years Property' datatype='real' name='[fiveYearsProperty]' role='measure' type='quantitative' />
+      <column caption='Floor Num (House Belonging.Csv)' datatype='integer' name='[floor_num (house_belonging.csv)]' role='dimension' type='ordinal' />
+      <column caption='Floor Num' datatype='real' name='[floor_num]' role='dimension' type='ordinal' />
+      <column caption='Followers (House Belonging.Csv)' datatype='integer' name='[followers (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Followers' datatype='real' name='[followers]' role='measure' type='quantitative' />
+      <column caption='geometry (Beijing geo.csv1)' datatype='spatial' name='[geometry (Beijing_geo.csv1)]' role='measure' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Geometry' datatype='spatial' name='[geometry]' role='measure' type='nominal' />
+      <column caption='House Cnt' datatype='real' name='[house_cnt]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Kitchen (House Belonging.Csv)' datatype='integer' name='[kitchen (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Kitchen' datatype='real' name='[kitchen]' role='measure' type='quantitative' />
+      <column caption='ladderRatio (house belonging.csv)' datatype='real' name='[ladderRatio (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Ladder Ratio' datatype='real' name='[ladderRatio]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='livingRoom (house belonging.csv)' datatype='real' name='[livingRoom (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Living Room' datatype='real' name='[livingRoom]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Mall Cnt' datatype='real' name='[mall_cnt]' role='measure' type='quantitative' />
+      <column caption='Month (House Belonging.Csv)' datatype='integer' name='[month (house_belonging.csv)]' role='dimension' type='quantitative' />
+      <column caption='Month' datatype='real' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='new id (Beijing geo.csv1)' datatype='integer' name='[new_id (Beijing_geo.csv1)]' role='dimension' type='ordinal' />
+      <column caption='New Id' datatype='integer' name='[new_id]' role='dimension' type='ordinal' />
+      <column caption='Price (House Belonging.Csv)' datatype='integer' name='[price (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='relativeHeight (house belonging.csv)' datatype='integer' name='[relativeHeight (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Relative Height' datatype='real' name='[relativeHeight]' role='measure' type='quantitative' />
+      <column caption='renovationCondition (house belonging.csv)' datatype='integer' name='[renovationCondition (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Renovation Condition' datatype='real' name='[renovationCondition]' role='measure' type='quantitative' />
+      <column caption='Square (House Belonging.Csv)' datatype='real' name='[square (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Square' datatype='real' name='[square]' role='measure' type='quantitative' />
+      <column caption='Subway (House Belonging.Csv)' datatype='real' name='[subway (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Subway' datatype='real' name='[subway]' role='measure' type='quantitative' />
+      <column caption='totalPrice (house belonging.csv)' datatype='real' name='[totalPrice (house_belonging.csv)]' role='measure' type='quantitative' />
+      <column caption='Total Price' datatype='real' name='[totalPrice]' role='measure' type='quantitative' />
+      <column caption='Year (House Belonging.Csv)' datatype='integer' name='[year (house_belonging.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year' datatype='real' name='[year]' role='dimension' type='quantitative' />
+      <column caption='名称 (Beijing geo.csv1)' datatype='spatial' name='[名称 (Beijing_geo.csv1)]' role='measure' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='周长 (Beijing geo.csv1)' datatype='real' name='[周长 (Beijing_geo.csv1)]' role='measure' type='quantitative' />
+      <column caption='面积 (Beijing geo.csv1)' datatype='real' name='[面积 (Beijing_geo.csv1)]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[belonging]' derivation='None' name='[none:belonging:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[belonging]' derivation='Sum' name='[sum:belonging:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='purple_10_0' type='palette'>
+            <map to='#bc86a9'>
+              <bucket>&quot;[federated.0q8jyrw0q95jq41h166ny0j9jnmg]&quot;</bucket>
+            </map>
+            <map to='#bc86a9'>
+              <bucket>&quot;[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:belonging:qk]&quot;</bucket>
+            </map>
+            <map to='#bc86a9'>
+              <bucket>&quot;[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:belonging:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;实际&quot;</bucket>
+            <bucket>&quot;估计&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Beijing_geo.csv1' id='Beijing_geo.csv_6833FE3976C543C58606AD77A112487E'>
+            <properties context=''>
+              <relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='Beijing_geo.csv1' table='[Beijing_geo#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='ID' ordinal='1' />
+                  <column datatype='real' name='面积' ordinal='2' />
+                  <column datatype='real' name='周长' ordinal='3' />
+                  <column datatype='spatial' name='名称' ordinal='4' />
+                  <column datatype='real' name='Popu' ordinal='5' />
+                  <column datatype='real' name='area' ordinal='6' />
+                  <column datatype='real' name='PoDensity' ordinal='7' />
+                  <column datatype='integer' name='new_id' ordinal='8' />
+                  <column datatype='spatial' name='geometry' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Beijing_geo.csv' id='Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220'>
+            <properties context=''>
+              <relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='Beijing_geo.csv' table='[Beijing_geo#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='ID' ordinal='1' />
+                  <column datatype='real' name='面积' ordinal='2' />
+                  <column datatype='real' name='周长' ordinal='3' />
+                  <column datatype='spatial' name='名称' ordinal='4' />
+                  <column datatype='real' name='Popu' ordinal='5' />
+                  <column datatype='real' name='area' ordinal='6' />
+                  <column datatype='real' name='PoDensity' ordinal='7' />
+                  <column datatype='integer' name='new_id' ordinal='8' />
+                  <column datatype='spatial' name='geometry' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='district.csv' id='district.csv_F8E3E49319A34A45BA4811B5F5FE6578'>
+            <properties context=''>
+              <relation connection='textscan.1qg7pmp0kug9lc15iavnp0zsples' name='district.csv' table='[district#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='belonging' ordinal='0' />
+                  <column datatype='real' name='Lng' ordinal='1' />
+                  <column datatype='real' name='Lat' ordinal='2' />
+                  <column datatype='real' name='Cid' ordinal='3' />
+                  <column datatype='real' name='followers' ordinal='4' />
+                  <column datatype='real' name='totalPrice' ordinal='5' />
+                  <column datatype='real' name='price' ordinal='6' />
+                  <column datatype='real' name='square' ordinal='7' />
+                  <column datatype='real' name='livingRoom' ordinal='8' />
+                  <column datatype='real' name='drawingRoom' ordinal='9' />
+                  <column datatype='real' name='kitchen' ordinal='10' />
+                  <column datatype='real' name='bathRoom' ordinal='11' />
+                  <column datatype='real' name='buildingType' ordinal='12' />
+                  <column datatype='real' name='constructionTime' ordinal='13' />
+                  <column datatype='real' name='renovationCondition' ordinal='14' />
+                  <column datatype='real' name='buildingStructure' ordinal='15' />
+                  <column datatype='real' name='ladderRatio' ordinal='16' />
+                  <column datatype='real' name='elevator' ordinal='17' />
+                  <column datatype='real' name='fiveYearsProperty' ordinal='18' />
+                  <column datatype='real' name='subway' ordinal='19' />
+                  <column datatype='real' name='district' ordinal='20' />
+                  <column datatype='real' name='communityAverage' ordinal='21' />
+                  <column datatype='real' name='year' ordinal='22' />
+                  <column datatype='real' name='month' ordinal='23' />
+                  <column datatype='real' name='day' ordinal='24' />
+                  <column datatype='real' name='floor_num' ordinal='25' />
+                  <column datatype='real' name='relativeHeight' ordinal='26' />
+                  <column datatype='real' name='buildingType_towel' ordinal='27' />
+                  <column datatype='real' name='buildingType_bungalow' ordinal='28' />
+                  <column datatype='real' name='buildingType_comb' ordinal='29' />
+                  <column datatype='real' name='buildingType_plate' ordinal='30' />
+                  <column datatype='real' name='house_cnt' ordinal='31' />
+                  <column datatype='real' name='mall_cnt' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='house_belonging.csv' id='house_belonging.csv_07474D7B180248BFA721F387978E7B6A'>
+            <properties context=''>
+              <relation connection='textscan.138tzp702fg7zn1f8tcr304195nl' name='house_belonging.csv' table='[house_belonging#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='id' ordinal='1' />
+                  <column datatype='real' name='Lng' ordinal='2' />
+                  <column datatype='real' name='Lat' ordinal='3' />
+                  <column datatype='integer' name='Cid' ordinal='4' />
+                  <column datatype='integer' name='followers' ordinal='5' />
+                  <column datatype='real' name='totalPrice' ordinal='6' />
+                  <column datatype='integer' name='price' ordinal='7' />
+                  <column datatype='real' name='square' ordinal='8' />
+                  <column datatype='real' name='livingRoom' ordinal='9' />
+                  <column datatype='integer' name='drawingRoom' ordinal='10' />
+                  <column datatype='integer' name='kitchen' ordinal='11' />
+                  <column datatype='integer' name='bathRoom' ordinal='12' />
+                  <column datatype='real' name='buildingType' ordinal='13' />
+                  <column datatype='real' name='constructionTime' ordinal='14' />
+                  <column datatype='integer' name='renovationCondition' ordinal='15' />
+                  <column datatype='integer' name='buildingStructure' ordinal='16' />
+                  <column datatype='real' name='ladderRatio' ordinal='17' />
+                  <column datatype='real' name='elevator' ordinal='18' />
+                  <column datatype='real' name='fiveYearsProperty' ordinal='19' />
+                  <column datatype='real' name='subway' ordinal='20' />
+                  <column datatype='integer' name='district' ordinal='21' />
+                  <column datatype='real' name='communityAverage' ordinal='22' />
+                  <column datatype='integer' name='year' ordinal='23' />
+                  <column datatype='integer' name='month' ordinal='24' />
+                  <column datatype='integer' name='day' ordinal='25' />
+                  <column datatype='integer' name='floor_num' ordinal='26' />
+                  <column datatype='integer' name='relativeHeight' ordinal='27' />
+                  <column datatype='integer' name='belonging' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mall_belonging.csv' id='mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111'>
+            <properties context=''>
+              <relation connection='textscan.138tzp702fg7zn1f8tcr304195nl' name='mall_belonging.csv' table='[mall_belonging#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='real' name='longitude' ordinal='2' />
+                  <column datatype='real' name='latitude' ordinal='3' />
+                  <column datatype='integer' name='belonging' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[belonging (mall_belonging.csv)]' />
+              <expression op='[new_id (Beijing_geo.csv1)]' />
+            </expression>
+            <first-end-point object-id='mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111' />
+            <second-end-point object-id='Beijing_geo.csv_6833FE3976C543C58606AD77A112487E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[belonging (house_belonging.csv)]' />
+              <expression op='[new_id]' />
+            </expression>
+            <first-end-point object-id='house_belonging.csv_07474D7B180248BFA721F387978E7B6A' />
+            <second-end-point object-id='Beijing_geo.csv_FD0E9DA8136349E99988C8073783F220' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[belonging]' />
+              <expression op='[belonging (house_belonging.csv)]' />
+            </expression>
+            <first-end-point object-id='district.csv_F8E3E49319A34A45BA4811B5F5FE6578' />
+            <second-end-point object-id='house_belonging.csv_07474D7B180248BFA721F387978E7B6A' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[belonging]' />
+              <expression op='[belonging (mall_belonging.csv)]' />
+            </expression>
+            <first-end-point object-id='district.csv_F8E3E49319A34A45BA4811B5F5FE6578' />
+            <second-end-point object-id='mall_belonging.csv_280B1A339CCA4120B43CB119F71B5111' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='district' name='federated.0q8jyrw0q95jq41h166ny0j9jnmg' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0q8jyrw0q95jq41h166ny0j9jnmg'>
+            <column aggregation='Avg' caption='Lat1' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Lng1' datatype='real' name='[Lng]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Lng]' derivation='Avg' name='[avg:Lng:qk]' pivot='key' type='quantitative' />
+            <column caption='Belonging (Mall Belonging.Csv)' datatype='integer' name='[belonging (mall_belonging.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[geometry (Beijing_geo.csv1)]' derivation='Collect' name='[clct:geometry (Beijing_geo.csv1):nk]' pivot='key' type='nominal' />
+            <column caption='geometry (Beijing geo.csv1)' datatype='spatial' name='[geometry (Beijing_geo.csv1)]' role='measure' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='House Cnt' datatype='real' name='[house_cnt]' role='measure' type='quantitative' />
+            <column caption='Mall Cnt' datatype='real' name='[mall_cnt]' role='measure' type='quantitative' />
+            <column-instance column='[Lat]' derivation='None' name='[none:Lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[belonging (mall_belonging.csv)]' derivation='None' name='[none:belonging (mall_belonging.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[house_cnt]' derivation='None' name='[none:house_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mall_cnt]' derivation='None' name='[none:mall_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[house_cnt]' derivation='Sum' name='[sum:house_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mall_cnt]' derivation='Sum' name='[sum:mall_cnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:house_cnt:qk]' included-values='in-range'>
+            <min>2.0</min>
+          </filter>
+          <filter class='quantitative' column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:mall_cnt:qk]' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:mall_cnt:qk]</column>
+            <column>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:house_cnt:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[avg:Lng:qk]' field-type='quantitative' max='13013813.448006827' min='12893343.866504388' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:Lat:qk]' field-type='quantitative' max='4898359.5938138934' min='4820815.9518442554' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:mall_cnt:qk]' palette='red_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:house_cnt:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+            <format attr='enabled' id='poi-scalerank4-l15' value='false' />
+            <format attr='enabled' id='poi-scalerank4-l1' value='false' />
+            <format attr='enabled' id='poi-parks_scalerank4' value='false' />
+            <format attr='enabled' id='poi-scalerank3' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank3' value='false' />
+            <format attr='enabled' id='poi-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank1' value='false' />
+            <format attr='enabled' id='poi-scalerank1' value='false' />
+            <format attr='enabled' id='airport-label' value='false' />
+            <format attr='enabled' id='rail-label' value='false' />
+            <format attr='enabled' id='building-line' value='false' />
+            <format attr='enabled' id='building' value='false' />
+            <format attr='enabled' id='housenum-label' value='false' />
+            <format attr='enabled' id='tunnel-street-low' value='false' />
+            <format attr='enabled' id='tunnel-street_limited-low' value='false' />
+            <format attr='enabled' id='tunnel-service-link-track-case' value='false' />
+            <format attr='enabled' id='tunnel-street_limited-case' value='false' />
+            <format attr='enabled' id='tunnel-street-case' value='false' />
+            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='false' />
+            <format attr='enabled' id='tunnel-primary-case' value='false' />
+            <format attr='enabled' id='tunnel-trunk_link-case' value='false' />
+            <format attr='enabled' id='tunnel-motorway_link-case' value='false' />
+            <format attr='enabled' id='tunnel-trunk-case' value='false' />
+            <format attr='enabled' id='tunnel-motorway-case' value='false' />
+            <format attr='enabled' id='tunnel-construction' value='false' />
+            <format attr='enabled' id='tunnel-path' value='false' />
+            <format attr='enabled' id='tunnel-steps' value='false' />
+            <format attr='enabled' id='tunnel-trunk_link' value='false' />
+            <format attr='enabled' id='tunnel-motorway_link' value='false' />
+            <format attr='enabled' id='tunnel-pedestrian' value='false' />
+            <format attr='enabled' id='tunnel-service-link-track' value='false' />
+            <format attr='enabled' id='tunnel-street_limited' value='false' />
+            <format attr='enabled' id='tunnel-street' value='false' />
+            <format attr='enabled' id='tunnel-secondary-tertiary' value='false' />
+            <format attr='enabled' id='tunnel-primary' value='false' />
+            <format attr='enabled' id='tunnel-oneway-arrows-blue-minor' value='false' />
+            <format attr='enabled' id='tunnel-oneway-arrows-blue-major' value='false' />
+            <format attr='enabled' id='tunnel-trunk' value='false' />
+            <format attr='enabled' id='tunnel-motorway' value='false' />
+            <format attr='enabled' id='tunnel-oneway-arrows-white' value='false' />
+            <format attr='enabled' id='ferry' value='false' />
+            <format attr='enabled' id='ferry_auto' value='false' />
+            <format attr='enabled' id='road-path-bg' value='false' />
+            <format attr='enabled' id='road-steps-bg' value='false' />
+            <format attr='enabled' id='road-sidewalk-bg' value='false' />
+            <format attr='enabled' id='turning-features-outline' value='false' />
+            <format attr='enabled' id='road-pedestrian-case' value='false' />
+            <format attr='enabled' id='road-street-low' value='false' />
+            <format attr='enabled' id='road-street_limited-low' value='false' />
+            <format attr='enabled' id='road-service-link-track-case' value='false' />
+            <format attr='enabled' id='road-street_limited-case' value='false' />
+            <format attr='enabled' id='road-street-case' value='false' />
+            <format attr='enabled' id='road-secondary-tertiary-case' value='false' />
+            <format attr='enabled' id='road-primary-case' value='false' />
+            <format attr='enabled' id='road-motorway_link-case' value='false' />
+            <format attr='enabled' id='road-trunk_link-case' value='false' />
+            <format attr='enabled' id='road-trunk-case' value='false' />
+            <format attr='enabled' id='road-motorway-case' value='false' />
+            <format attr='enabled' id='road-construction' value='false' />
+            <format attr='enabled' id='road-sidewalks' value='false' />
+            <format attr='enabled' id='road-path' value='false' />
+            <format attr='enabled' id='road-steps' value='false' />
+            <format attr='enabled' id='road-trunk_link' value='false' />
+            <format attr='enabled' id='road-motorway_link' value='false' />
+            <format attr='enabled' id='road-pedestrian' value='false' />
+            <format attr='enabled' id='road-pedestrian-polygon-fill' value='false' />
+            <format attr='enabled' id='road-pedestrian-polygon-pattern' value='false' />
+            <format attr='enabled' id='road-polygon' value='false' />
+            <format attr='enabled' id='road-service-link-track' value='false' />
+            <format attr='enabled' id='road-street_limited' value='false' />
+            <format attr='enabled' id='road-street' value='false' />
+            <format attr='enabled' id='road-secondary-tertiary' value='false' />
+            <format attr='enabled' id='road-primary' value='false' />
+            <format attr='enabled' id='road-oneway-arrows-blue-minor' value='false' />
+            <format attr='enabled' id='road-oneway-arrows-blue-major' value='false' />
+            <format attr='enabled' id='road-trunk' value='false' />
+            <format attr='enabled' id='road-motorway' value='false' />
+            <format attr='enabled' id='road-rail' value='false' />
+            <format attr='enabled' id='road-rail-tracks' value='false' />
+            <format attr='enabled' id='level-crossings' value='false' />
+            <format attr='enabled' id='road-oneway-arrows-white' value='false' />
+            <format attr='enabled' id='turning-features' value='false' />
+            <format attr='enabled' id='bridge-path-bg' value='false' />
+            <format attr='enabled' id='bridge-steps-bg' value='false' />
+            <format attr='enabled' id='bridge-pedestrian-case' value='false' />
+            <format attr='enabled' id='bridge-street-low' value='false' />
+            <format attr='enabled' id='bridge-street_limited-low' value='false' />
+            <format attr='enabled' id='bridge-service-link-track-case' value='false' />
+            <format attr='enabled' id='bridge-street_limited-case' value='false' />
+            <format attr='enabled' id='bridge-street-case' value='false' />
+            <format attr='enabled' id='bridge-secondary-tertiary-case' value='false' />
+            <format attr='enabled' id='bridge-primary-case' value='false' />
+            <format attr='enabled' id='bridge-trunk_link-case' value='false' />
+            <format attr='enabled' id='bridge-motorway_link-case' value='false' />
+            <format attr='enabled' id='bridge-trunk-case' value='false' />
+            <format attr='enabled' id='bridge-motorway-case' value='false' />
+            <format attr='enabled' id='bridge-construction' value='false' />
+            <format attr='enabled' id='bridge-path' value='false' />
+            <format attr='enabled' id='bridge-steps' value='false' />
+            <format attr='enabled' id='bridge-trunk_link' value='false' />
+            <format attr='enabled' id='bridge-motorway_link' value='false' />
+            <format attr='enabled' id='bridge-pedestrian' value='false' />
+            <format attr='enabled' id='bridge-service-link-track' value='false' />
+            <format attr='enabled' id='bridge-street_limited' value='false' />
+            <format attr='enabled' id='bridge-street' value='false' />
+            <format attr='enabled' id='bridge-secondary-tertiary' value='false' />
+            <format attr='enabled' id='bridge-primary' value='false' />
+            <format attr='enabled' id='bridge-oneway-arrows-blue-minor' value='false' />
+            <format attr='enabled' id='bridge-oneway-arrows-blue-major' value='false' />
+            <format attr='enabled' id='bridge-trunk' value='false' />
+            <format attr='enabled' id='bridge-motorway' value='false' />
+            <format attr='enabled' id='bridge-rail' value='false' />
+            <format attr='enabled' id='bridge-rail-tracks' value='false' />
+            <format attr='enabled' id='bridge-trunk_link-2-case' value='false' />
+            <format attr='enabled' id='bridge-motorway_link-2-case' value='false' />
+            <format attr='enabled' id='bridge-trunk-2-case' value='false' />
+            <format attr='enabled' id='bridge-motorway-2-case' value='false' />
+            <format attr='enabled' id='bridge-trunk_link-2' value='false' />
+            <format attr='enabled' id='bridge-motorway_link-2' value='false' />
+            <format attr='enabled' id='bridge-trunk-2' value='false' />
+            <format attr='enabled' id='bridge-motorway-2' value='false' />
+            <format attr='enabled' id='bridge-oneway-arrows-white' value='false' />
+            <format attr='enabled' id='road-label-small' value='false' />
+            <format attr='enabled' id='road-label-medium' value='false' />
+            <format attr='enabled' id='road-label-large' value='false' />
+            <format attr='enabled' id='road-shields-black' value='false' />
+            <format attr='enabled' id='road-shields-white' value='false' />
+            <format attr='enabled' id='motorway-junction' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.090000003576278687' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:mall_cnt:qk]' />
+              <size column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:house_cnt:qk]' />
+              <lod column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[clct:geometry (Beijing_geo.csv1):nk]' />
+              <lod column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:mall_cnt:qk]' />
+              <lod column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:belonging (mall_belonging.csv):qk]' />
+              <geometry column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[clct:geometry (Beijing_geo.csv1):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.1712706089019775' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:Lat:qk]</rows>
+        <cols>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[avg:Lng:qk]</cols>
+      </table>
+      <simple-id uuid='{6C79C4CE-3711-4D69-B9A2-04B0DE510C9F}' />
+    </worksheet>
+    <worksheet name='工作表 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='district' name='federated.0q8jyrw0q95jq41h166ny0j9jnmg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q8jyrw0q95jq41h166ny0j9jnmg'>
+            <column caption='Belonging (Mall Belonging.Csv)' datatype='integer' name='[belonging (mall_belonging.csv)]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[belonging (mall_belonging.csv)]' derivation='Sum' name='[sum:belonging (mall_belonging.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:name:nk]' direction='ASC' using='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:belonging (mall_belonging.csv):qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:belonging (mall_belonging.csv):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:belonging (mall_belonging.csv):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9F05A726-CDE1-4B7A-98FF-B043519AAB61}' />
+    </worksheet>
+    <worksheet name='工作表 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='district' name='federated.0q8jyrw0q95jq41h166ny0j9jnmg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q8jyrw0q95jq41h166ny0j9jnmg'>
+            <column caption='ln([House Cnt])' datatype='real' name='[Calculation_3666844928461631497]' role='measure' type='quantitative' user:unnamed='工作表 3'>
+              <calculation class='tableau' formula='ln([house_cnt])' />
+            </column>
+            <column caption='House Cnt / Mall Cnt' datatype='real' name='[Calculation_3666844928462090250]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[house_cnt]/[mall_cnt]' />
+            </column>
+            <column caption='House Cnt' datatype='real' name='[house_cnt]' role='measure' type='quantitative' />
+            <column caption='Mall Cnt' datatype='real' name='[mall_cnt]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3666844928461631497]' derivation='None' name='[none:Calculation_3666844928461631497:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3666844928462090250]' derivation='None' name='[none:Calculation_3666844928462090250:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mall_cnt]' derivation='None' name='[none:mall_cnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:Calculation_3666844928462090250:qk]' included-values='in-range'>
+            <min>384.0</min>
+          </filter>
+          <filter class='quantitative' column='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:mall_cnt:qk]' included-values='in-range'>
+            <min>2.0</min>
+          </filter>
+          <slices>
+            <column>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:mall_cnt:qk]</column>
+            <column>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:Calculation_3666844928462090250:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:Calculation_3666844928461631497:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:mall_cnt:qk]</rows>
+        <cols>[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[none:Calculation_3666844928461631497:qk]</cols>
+      </table>
+      <simple-id uuid='{96355400-2B91-4DC9-9C4B-41FA1273EE0A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:mall_cnt:qk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0q8jyrw0q95jq41h166ny0j9jnmg].[sum:house_cnt:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{6519BF91-4D9D-4DB6-82AE-0F372661C52F}' />
+    </window>
+    <window class='worksheet' name='工作表 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{68B434B8-44F6-4D08-8612-011C272F2DAD}' />
+    </window>
+    <window class='worksheet' name='工作表 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A3A6D98-DD12-4E4C-8EB6-F4EB831F65B9}' />
+    </window>
+  </windows>
+</workbook>
