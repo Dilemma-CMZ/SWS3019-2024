@@ -18,3 +18,5 @@ plt.title('Subway Category vs. Community Average')
 
 # 显示图表
 plt.show()
+
+average_by_subway_category.to_csv('../../data/corelation/average_by_subway_category.csv', index=False)
