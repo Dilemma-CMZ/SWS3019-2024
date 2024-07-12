@@ -21,6 +21,9 @@ if __name__ == '__main__':
 
     bj.plot(ax=ax, column=col, cmap=cmap, legend=True, edgecolor='black')
 
+    plt.xlim(115.9, 116.9)
+    plt.ylim(39.6, 40.4)
+
     ax.set_title('Beijing Evaluation Result')
     ax.set_xlabel('Longitude')
     ax.set_ylabel('Latitude')
